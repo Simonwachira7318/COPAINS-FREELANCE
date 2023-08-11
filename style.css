@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    /* background-color: #a29b9b; */
+    color: #000000;
+  }
+  
+  header {
+    background-color: #2d3337;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  header h1{
+    color: rgb(0, 174, 255);
+  }
+  header p{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1.5;
+
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Services section */
+  section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgb(157, 180, 172);
+    background-image: url(./media/pngwing.com\ \(26\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    /* color: rgb(0, 174, 255); */
+  }
+  
+  section ul {
+    list-style-type: none;
+    /* margin-top: 20px; */
+    align-items: center;
+    justify-content: center;
+    /* margin-left:38%; */
+  }
+  
+  section li {
+    margin-bottom: 10px;
+    border: 1px solid rgb(0, 117, 163);
+    border-radius: 5px;
+    width: 400px;
+    background-color: #8297a6;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  section li:hover{
+    background-color: #2d3337;
+    cursor: pointer;
+    color: #fff;
+    /* font-size: 18px; */
+    /* font-weight: 4px bold; */
+  }
+  .service{
+    display: flex;
+    /* border: 2px solid rgb(0, 117, 163); */
+  }
+  .services{
+    padding: 20px;
+  }
+  /* Team section */
+  .team{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .team-member {
+    background-color: aliceblue;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    /* margin: 20px 0; */
+    /* text-align: center; */
+    /* border: 1px solid rgb(0, 117, 163); */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+transition: all 0.8s ease-in-out;
+  }
+  .team-member:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    background-position: center;
+  }
+  .team-member h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 1.2;
+  }
+  .team-member p{
+    line-height: 2;
+    letter-spacing: 1.5;
+    font-size: 20px;
+    color: gray;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 20px 0;
+    }
+    .container {
+      padding: 10px;
+    }
+    .team-member {
+      padding: 10px;
+    }
+  }
+  
