@@ -67,8 +67,9 @@ body, h1, h2, h3, p, ul, li {
     margin-bottom: 10px;
     border: 1px solid rgb(196, 208, 213);
     border-radius: 5px;
-    width: 400px;
-    background-color: #6b92ac;
+    width: 340px;
+    color: #ddd;
+    background-color: #333d45;
     font-size: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -79,7 +80,7 @@ body, h1, h2, h3, p, ul, li {
   }
 
   section li:hover{
-    background-color: #333d45;
+    background-color: #6b92ac;
     cursor: pointer;
     color: #fff;
     border: 1px solid rgb(0, 179, 255);
@@ -100,14 +101,14 @@ body, h1, h2, h3, p, ul, li {
     margin: 0 auto;
   }
   .team-member {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
     box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
--webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
--moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
-transition: all 0.8s ease-in-out;
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+    transition: all 0.8s ease-in-out;
   }
   .team-member:hover{
     transform: scale(1.05);
@@ -125,7 +126,7 @@ transition: all 0.8s ease-in-out;
     margin-bottom: 10px;
     font-size: 25px;
     letter-spacing: 1.2;
-    color: rgb(0, 128, 255);
+    color: rgb(0, 158, 231);
   }
   .team-member h3 img{
     padding: 0px;
@@ -133,7 +134,9 @@ transition: all 0.8s ease-in-out;
     height: 18px;
     width: 18px;
   }
-
+  .team-member h4{
+    color: #122633;
+  }
   .team-member p{
     line-height: 2;
     letter-spacing: 1.5;
