@@ -16,7 +16,7 @@ body, h1, h2, h3, p, ul, li {
   }
   
   header {
-    background-color: #2d3337;
+    background-color: #171c1e;
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -31,6 +31,9 @@ body, h1, h2, h3, p, ul, li {
     letter-spacing: 1.5;
 
   }
+  h5{
+    color: #adb9d1;
+  }
   
   .container {
     max-width: 1200px;
@@ -42,7 +45,8 @@ body, h1, h2, h3, p, ul, li {
   section {
     padding: 40px 0;
     text-align: center;
-    background-color: rgb(157, 180, 172);
+     background-color: #1b2d34;
+    /* background-color: #2d3337; */
     background-image: url(./media/pngwing.com\ \(26\).png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,32 +54,35 @@ body, h1, h2, h3, p, ul, li {
   section h2 {
     font-size: 35px;
     font-weight: bold;
-    /* color: rgb(0, 174, 255); */
+    color: rgb(0, 174, 255);
   }
   
   section ul {
     list-style-type: none;
-    /* margin-top: 20px; */
     align-items: center;
     justify-content: center;
-    /* margin-left:38%; */
   }
   
   section li {
     margin-bottom: 10px;
-    border: 1px solid rgb(0, 117, 163);
+    border: 1px solid rgb(196, 208, 213);
     border-radius: 5px;
     width: 400px;
-    background-color: #8297a6;
+    background-color: #6b92ac;
     font-size: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.6);
+    transition: all 0.7s ease-in-out;
   }
 
   section li:hover{
-    background-color: #2d3337;
+    background-color: #333d45;
     cursor: pointer;
     color: #fff;
+    border: 1px solid rgb(0, 179, 255);
     /* font-size: 18px; */
     /* font-weight: 4px bold; */
   }
@@ -118,22 +125,98 @@ transition: all 0.8s ease-in-out;
     margin-bottom: 10px;
     font-size: 25px;
     letter-spacing: 1.2;
+    color: rgb(0, 128, 255);
   }
+  .team-member h3 img{
+    padding: 0px;
+    margin: 0;
+    height: 18px;
+    width: 18px;
+  }
+
   .team-member p{
     line-height: 2;
     letter-spacing: 1.5;
     font-size: 20px;
     color: gray;
   }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+  .socials .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
+  .socials .social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    font-size: 24px;
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #000000;
+  }
+  
+  /* Footer */
+/* Style for the footer */
+footer {
+  background-color: #202323;
+  color: #ddd;
+  padding: 40px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  display: block;
+  margin-bottom: 10px;
+}
+h2{
+  color: #00bfff;
+}
+.footer-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: right;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #00bfff;
+  font-size: 20px;
+}
+.social-icons a:hover{
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+  color: #777;
+}
+
+
   /* Media queries for responsiveness */
   @media screen and (max-width: 768px) {
     header {
@@ -142,8 +225,22 @@ transition: all 0.8s ease-in-out;
     .container {
       padding: 10px;
     }
+    .service{
+      display: grid;
+    }
     .team-member {
       padding: 10px;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-info,
+    .footer-social {
+      margin-right: 0;
+      text-align: center;
+      margin-top: 20px;
     }
   }
   
