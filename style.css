@@ -236,6 +236,33 @@ h2{
 }
 
 
+
+
+
+#scrollToTopBtn {
+  display: none; 
+  /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #526263;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #333;
+  color: aquamarine;
+}
+
+
   /* Media queries for responsiveness */
   @media screen and (max-width: 768px) {
     header {
