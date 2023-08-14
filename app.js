@@ -38,6 +38,6 @@ window.onscroll = function () {
 
 // When the user clicks on the button, scroll to the top of the document
 scrollToTopBtn.addEventListener("click", function () {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
 });
