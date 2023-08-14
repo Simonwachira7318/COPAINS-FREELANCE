@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Us - COPAINS-FREELANCE</title>
+    <link rel="icon" href="./media/pngwing.com (26).png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span>COPAINS-FREELANCE</span></h1>
+        <p>Your Trusted Freelance Services Provider</p>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Website Design and Development</li>
+            <li>Graphic Design</li>
+            <li>Cloud Computing</li>
+            <li>App Development</li>
+            <li>Software Development</li>
+            <li>Digital Marketing</li>
+            <li>Networking</li>
+            <li>WordPress Development</li>
+            <li>E-commerce Development</li>
+            <li>User Experience Design</li>
+            <li>Search Engine Optimization</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you're interested in our services, please fill out the form below or use the contact details provided.</p>
+
+        <form id="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="service" required>
+                <option value="" disabled selected> Select Service </option>
+                <option>Website Design and Development</option>
+                <option>Graphic Design</option>
+                <option>Cloud Computing</option>
+                <option>App Development</option>
+                <option>Software Development</option>
+                <option>Digital Marketing</option>
+                <option>Networking</option>
+                <option>WordPress Development</option>
+                <option>E-commerce Development</option>
+                <option>User Experience Design</option>
+                <option>Search Engine Optimization</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <section>
+            <!-- BACK HOME BUTTON  -->
+        <button id="back-button" class="button-91" role="button"><i class="fas fa-arrow-left"  style='color: #000000'> </i>BACK HOME</button>
+            <script>
+                document.getElementById("back-button").addEventListener("click", function() {
+                    window.location.href = "index.html";
+                });
+            </script>
+        </section>
+
+        <div id="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: info@copains-freelance.com</p>
+            <p>Phone: 0713690194</p>
+            <p>Address:  Kutus ,KE</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 COPAINS-FREELANCE. All rights reserved.</p>
+    </footer>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script>// Get the button
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+          } else {
+            scrollToTopBtn.style.display = "none";
+          }
+        };
+        
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function () {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera
+        });
+        </script>
+    <script src="/app.js"></script>
+    <style>
+        /* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1b2d34;
+    /* background-color: #2d3337; */
+    background-image: url(./media/pngwing.com\ \(26\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #171c1e;
+    text-align: center;
+    padding: 2rem 0;
+    color: #00dcf4;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #fff;
+}
+
+/* Services Styles */
+#services {
+    color: #020405;
+    background: transparent;
+    padding: 3rem 0;
+    text-align: center;
+}
+#services h2 {
+    color: #00dcf4;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#services ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#services li {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #c8fff7;
+}
+
+/* Contact Styles */
+#contact {
+    padding: 3rem 0;
+    text-align: center;
+}
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #1f3741e7;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 95%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #aceef5d4;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+#contact-form select {
+    height: 40px;
+}
+#contact-form textarea {
+    resize: vertical;
+}
+#contact-form button {
+    background-color: #007bff;
+    color: rgb(215, 226, 226);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* button back  */
+  .button-91{
+    margin:10px;
+  width: 200px;
+  color: #000000;
+  padding: 15px 25px;
+  background-color: #0087c5;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%,
+                     rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), 
+                    inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  border: 2px solid rgb(0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-91:hover{
+  /* background-color: #00c5c5; */
+  background-color: #26e2e2;
+  border: 2px solid rgb(0, 85, 255);
+  transform: translateY(-1px);
+}
+
+
+
+
+/* Contact Details Styles */
+#contact-details {
+    margin-top: 2rem;
+}
+#contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#contact-details p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #202323;
+    color: #ddd;
+    padding: 1rem 0;
+    text-align: center;
+}
+#scrollToTopBtn {
+  display: none; 
+  /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #526263;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #333;
+  color: rgb(127, 253, 255);
+}
+
+    </style>
+</body>
+</html>
