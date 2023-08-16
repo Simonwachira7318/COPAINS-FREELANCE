@@ -16,7 +16,7 @@
 
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
+        <ul  class="animated-list">
             <li>Website Design and Development</li>
             <li>Graphic Design</li>
             <li>Cloud Computing</li>
@@ -152,10 +152,29 @@ header p {
 #services li {
     margin: 1rem;
     padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 0.5rem;
     background-color: #c8fff7;
 }
+/* services animation keyframes */
+@keyframes borderAnimation {
+    0% {
+        border-bottom: 3px solid blue;
+    }
+    50% {
+        border-bottom: 3px solid #ffffff; 
+    }
+    100% {
+        border-bottom: 3px solid rgb(0, 241, 249);
+    }
+}
+
+/* Apply animation to list items */
+.animated-list li {
+    border-bottom: 2px solid transparent;
+    animation: borderAnimation 2s infinite;
+}
+
 
 /* Contact Styles */
 #contact {
