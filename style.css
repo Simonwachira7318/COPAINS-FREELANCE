@@ -388,7 +388,7 @@ h2{
   /* Hide the button by default */
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -409,6 +409,9 @@ h2{
 
   /* Media queries for responsiveness */
   @media screen and (max-width: 768px) {
+    #scrollToTopBtn{
+      right: 10px; 
+    }
     header {
       padding: 20px 0;
     }

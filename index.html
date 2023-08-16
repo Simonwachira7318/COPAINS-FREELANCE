@@ -70,7 +70,12 @@
       <section>
         <!-- <button id="hire-button" class="button-91" role="button">Hire Us</button> -->
         <button class="button-85" role="button" id="hire-button"><i class='fa fa-quote-left' style="font-size: 8px;"></i> HIRE US  <i class='fa fa-quote-right' style="font-size: 8px;"></i> </button>
-
+        <script>
+          // hire redirect button 
+            document.getElementById("hire-button").addEventListener("click", function() {
+              window.location.href = "hire.html";
+            });
+        </script>
       </section>
       <!-- team section  -->
   <section>
@@ -107,6 +112,7 @@
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
+          <!-- footer logo and company name  -->
           <img src="./media/pngwing.com (26).png" alt="logo" width="100px" height="100px">
           <h2>COPAINS-FREELANCE</h2>
           <h5><b>THINK TECH</b></h5>
@@ -116,6 +122,7 @@
              including HTML, CSS, JavaScript, PHP, and WordPress. We are also proficient in user experience design and search engine optimization.
           </p>
         </div>
+        <!-- footer contacts  -->
         <div class="footer-contacts">
           <h3>Contact Us</h3>
           <p> <i class="fas fa-phone"  style='color: #00bfff'> :</i>  011256304</p>
@@ -125,6 +132,7 @@
           <p> <i class="fas fa-map-marker-alt" style='color: #00bfff'> :</i>  Kutus KE</p>
         </div>
         <div class="footer-social">
+          <!-- footer newsletter   -->
           <div class="newsletter-footer">
             <h3>Subscribe to Our Newsletter</h3>
             <p>Stay updated with the latest news and updates.</p>
@@ -132,7 +140,8 @@
                 <input type="email" name="email" placeholder="Your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
-         </div>        
+         </div>   
+         <!-- footer social-media handle links       -->
           <h3>Connect with us:</h3>
           <div class="social-icons">
             <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>

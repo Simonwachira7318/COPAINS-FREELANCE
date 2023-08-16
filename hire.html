@@ -159,19 +159,19 @@ header p {
 /* services animation keyframes */
 @keyframes borderAnimation {
     0% {
-        border-bottom: 3px solid blue;
+        border-bottom: 3px solid rgb(0, 0, 0);
     }
     50% {
-        border-bottom: 3px solid #ffffff; 
+        border-bottom: 3px solid #0044ff; 
     }
     100% {
-        border-bottom: 3px solid rgb(0, 241, 249);
+        border-bottom: 3px solid rgb(249, 0, 0);
     }
 }
 
 /* Apply animation to list items */
 .animated-list li {
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     animation: borderAnimation 2s infinite;
 }
 
@@ -222,10 +222,10 @@ header p {
 
 /* button back  */
   .button-91{
-    margin:10px;
-  width: 200px;
+  margin:15px;
+  width: 160px;
   color: #000000;
-  padding: 15px 25px;
+  padding: 10px 20px;
   background-color: #0087c5;
   background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%,
                      rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
@@ -244,9 +244,8 @@ header p {
 }
 
 .button-91:hover{
-  /* background-color: #00c5c5; */
-  background-color: #26e2e2;
-  border: 2px solid rgb(0, 85, 255);
+  background-color:  rgb(0, 174, 255);
+  border: 2px solid rgb(254, 254, 254);
   transform: translateY(-1px);
 }
 
@@ -279,7 +278,7 @@ footer {
   /* Hide the button by default */
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -297,6 +296,11 @@ footer {
   color: rgb(127, 253, 255);
 }
 
+@media screen and (max-width: 768px) {
+    #scrollToTopBtn{
+      right: 10px; 
+    }
+ }
     </style>
 </body>
 </html>
