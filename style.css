@@ -121,6 +121,7 @@ body, h1, h2, h3, p, ul, li {
   outline: none;
   color: rgb(255, 255, 255);
   background: #111;
+  border: 3px solid rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
   z-index: 0;
