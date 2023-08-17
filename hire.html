@@ -31,11 +31,11 @@
         </ul>
     </section>
 
-    <section id="contact">
+     <section id="contact">
         <h2>Contact Us</h2>
         <p>If you're interested in our services, please fill out the form below or use the contact details provided.</p>
 
-        <form id="contact-form" action="#" method="post">
+        <form id="contact-form" action="send_email.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <select name="service" required>
@@ -55,7 +55,7 @@
             <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Submit</button>
         </form>
-        <section>
+     <section>
             <!-- BACK HOME BUTTON  -->
         <button id="back-button" class="button-91" role="button"><i class="fas fa-arrow-left"  style='color: #000000'> </i>BACK HOME</button>
             <script>
@@ -107,7 +107,6 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #1b2d34;
-    /* background-color: #2d3337; */
     background-image: url(./media/pngwing.com\ \(26\).png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,28 +151,11 @@ header p {
 #services li {
     margin: 1rem;
     padding: 0.5rem 1rem;
-    /* border: 1px solid #ccc; */
     border-radius: 0.5rem;
-    background-color: #c8fff7;
+    background: linear-gradient(200deg, rgb(89, 205, 255) 0%, #c8fff7);
 }
 /* services animation keyframes */
-@keyframes borderAnimation {
-    0% {
-        border-bottom: 3px solid rgb(0, 0, 0);
-    }
-    50% {
-        border-bottom: 3px solid #0044ff; 
-    }
-    100% {
-        border-bottom: 3px solid rgb(249, 0, 0);
-    }
-}
 
-/* Apply animation to list items */
-.animated-list li {
-    border-bottom: 3px solid transparent;
-    animation: borderAnimation 2s infinite;
-}
 
 
 /* Contact Styles */
@@ -209,7 +191,8 @@ header p {
 #contact-form button {
     background-color: #007bff;
     color: rgb(215, 226, 226);
-    border: none;
+    /* border: none; */
+    border: .5px solid rgba(0, 157, 255, 0.814);
     border-radius: 0.3rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -217,8 +200,11 @@ header p {
 }
 #contact-form button:hover {
     background-color: #0056b3;
+    border: .5px solid rgba(255, 255, 255, 0.814);
 }
-
+#contact h2{
+        color: #00dcf4;
+    }
 
 /* button back  */
   .button-91{
@@ -250,8 +236,6 @@ header p {
 }
 
 
-
-
 /* Contact Details Styles */
 #contact-details {
     margin-top: 2rem;
@@ -259,6 +243,7 @@ header p {
 #contact-details h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #00dcf4;
 }
 #contact-details p {
     font-size: 1.1rem;
@@ -271,6 +256,7 @@ footer {
     background-color: #202323;
     color: #ddd;
     padding: 1rem 0;
+    font-size: 13px;
     text-align: center;
 }
 #scrollToTopBtn {
@@ -300,6 +286,53 @@ footer {
     #scrollToTopBtn{
       right: 10px; 
     }
+    header {
+    padding: 1.3rem 0;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+    #services {
+        padding: 1.5rem 0;
+    }
+    #services h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    }
+    #services li {
+    margin: .3rem;
+    padding: 0.3rem .7rem;
+    }
+    #contact {
+    padding: 0rem 0;
+    }
+    #contact h2{
+        color: #00dcf4;
+    }
+    #contact-details {
+    margin-top: 0rem;
+    }
+    #contact-details h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #00dcf4;
+    }
+    #contact-details p {
+        font-size: .8rem;
+        opacity: 0.9;
+        margin-bottom: 0.3rem;
+    }
+    footer {
+    padding: .5rem 0;
+    font-size: 10px;
+    }
+
+
+
  }
     </style>
 </body>

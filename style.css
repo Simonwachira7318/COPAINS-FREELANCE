@@ -194,7 +194,8 @@ body, h1, h2, h3, p, ul, li {
     margin: 0 auto;
   }
   .team-member {
-    background-color:  rgb(215, 228, 236);
+    /* background-color:  rgb(215, 228, 236); */
+    background: linear-gradient(200deg, rgb(142, 219, 255) 0%, #d7c1c1 100%);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
