@@ -35,7 +35,7 @@
         <h2>Contact Us</h2>
         <p>If you're interested in our services, please fill out the form below or use the contact details provided.</p>
 
-        <form id="contact-form" action="send_email.php" method="post">
+        <form id="contact-form" action="send.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <select name="service" required>
@@ -67,9 +67,9 @@
 
         <div id="contact-details">
             <h3>Contact Details</h3>
-            <p>Email: info@copains-freelance.com</p>
-            <p>Phone: 0713690194</p>
-            <p>Address:  Kutus ,KE</p>
+            <p> <a href="mailto:simonwachira7318@gmail.com">Email: info@copains-freelance.com</a> </p>
+            <p> <a href="tel:0115256304">phone: 0115256304</a> </p>
+            <p> <a href="https://www.google.com/maps?q=KG%20Road,%20Kutus" target="_blank">Address: KUTUS ,KE</a></p>
         </div>
     </section>
     <footer>
@@ -205,6 +205,33 @@ header p {
 #contact h2{
         color: #00dcf4;
     }
+    #contact-details {
+    padding: 10px;
+    background: transparent;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#contact-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#contact-details p {
+    margin: 5px 0;
+}
+
+#contact-details a {
+    text-decoration: none;
+    color: #e7f0fb;
+    font-weight: bold;
+}
+
+#contact-details a:hover {
+    text-decoration: underline;
+}
+ 
 
 /* button back  */
   .button-91{
@@ -266,10 +293,10 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   outline: none;
-  background-color: #526263;
+  background-color: #5262636f;
   color: white;
   cursor: pointer;
   padding: 10px;

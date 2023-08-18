@@ -1,11 +1,14 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $service = $_POST['service'];
     $message = $_POST['message'];
 
-    $to = 'simonwachira7318@gmail.com';  // send email to this email address
+    $to = 'simonwachira7318@gmail.com'; // recipient's email 
     $subject = 'New Contact Form Submission';
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -20,8 +23,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oops! Something went wrong and we couldn't send your message.";
     }
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-    
 }
 ?>
